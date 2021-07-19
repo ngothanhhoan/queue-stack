@@ -9,7 +9,7 @@ class stackArray{
     }
 
     pop() {
-   if(this.items.lenght === 0) {
+   if(this.items.length === 0) {
        console.log('this is empty')
         } else{
        this.items.pop();
@@ -18,15 +18,15 @@ class stackArray{
 
 
     peek() {
-    return this.items[this.items.lenght -1];
+    return this.items[this.items.length -1];
     }
 
     isEmpty() {
-    return this.items.lenght === 0;
+    return this.items.length === 0;
     }
 
-    lenght() {
-        return this.items.lenght;
+    length() {
+        return this.items.length;
     }
 }
 

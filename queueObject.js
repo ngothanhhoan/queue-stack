@@ -8,18 +8,22 @@ class queueObject {
         this.items[this.tailIndex] = value;
         this.tailIndex++;
     }
+
     dequeue() {
         const item = this.items[this.headIndex];
         delete this.items[this.headIndex];
         this.headIndex++;
         return item;
     }
+
     peek() {
         return this.items[this.headIndex];
     }
+
     length() {
         return this.tailIndex - this.headIndex;
     }
+    
     isEmpty() {
         return this.tailIndex === this.headIndex; //trả về true/false -- true
     }

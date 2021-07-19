@@ -4,19 +4,23 @@ class stackArray {
         this.headIndex = 0;
         this.tailIndex = 0;
     }
+    
     push(value) {
         this.items[this.tailIndex] = value;
         this.tailIndex++;
     }
+
     pop() {
         const item = this.items[this.tailIndex - 1];
         delete this.items[this.tailIndex - 1];
         this.tailIndex--;
         return item;
     }
+
     peek() {
         return this.items[this.tailIndex - 1];
     }
+
     length() {
         return this.tailIndex - this.headIndex;
     }

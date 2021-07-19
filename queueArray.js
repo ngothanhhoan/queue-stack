@@ -1,20 +1,25 @@
 class queueObject {
     constructor() {
         this.items = [];
+        
     }
+
     enqueue(value) {
         this.items.push(value);
-        this.tailIndex++;
     }
+
     dequeue() {
         this.items.shift();
     }
+
     peek() {
         return this.items[this.headIndex];
     }
+
     length() {
         return this.tailIndex - this.headIndex;
     }
+
     isEmpty() {
         return this.tailIndex === this.headIndex; //trả về true/false -- true
     }
