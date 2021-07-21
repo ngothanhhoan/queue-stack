@@ -31,7 +31,6 @@ class stackArray{
 }
 
 var stack = new stackArray();
-
 stack.push(1)
 stack.push(2)
 stack.push(3)
